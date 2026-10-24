@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-[#171717] antialiased font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-[#171717] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#383838] disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0070f3];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-[#eaeaea] bg-white px-5 py-2.5 text-sm font-medium text-[#171717] hover:border-[#171717] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0070f3];
+  }
+  .field {
+    @apply mt-2 w-full rounded-md border border-[#eaeaea] bg-white px-3 py-2 text-sm text-[#171717] focus:border-[#171717] focus:outline-none focus:ring-2 focus:ring-[#0070f3]/30;
+  }
+  .mode-card {
+    @apply flex cursor-pointer items-center gap-2 rounded-md border border-[#eaeaea] px-4 py-3 text-sm text-[#171717] hover:border-[#171717];
+  }
+  .mode-card:has(input:checked) {
+    @apply border-[#171717] ring-1 ring-[#171717];
+  }
+  .cut-btn {
+    @apply mt-2 w-full rounded-md border border-[#eaeaea] bg-white px-2 py-1.5 text-xs font-medium text-[#171717] hover:border-[#171717];
+  }
+  .cut-btn.active {
+    @apply border-[#171717] bg-[#171717] text-white;
+  }
+}
