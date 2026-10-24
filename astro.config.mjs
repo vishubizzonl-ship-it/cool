@@ -2,9 +2,9 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// Change `site` once the final domain is chosen.
+// Final domain: trycool.app (register it before going live).
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://trycool.app',
   vite: {
     plugins: [tailwindcss()],
   },

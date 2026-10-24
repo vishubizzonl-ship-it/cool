@@ -11,5 +11,4 @@ Open http://localhost:4321/
     npm run build
 
 ## Before going live
-- Change `site` in `astro.config.mjs` to the final domain (currently a placeholder).
-- Note: trycool.com is already used by another company's website, so pick a different domain.
+- Domain used in code: trycool.app. Register it at your registrar before pointing it at the site.
